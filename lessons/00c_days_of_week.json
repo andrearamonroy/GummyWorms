@@ -1,0 +1,166 @@
+{
+  "id": "days_of_week",
+  "title": "Days of the week",
+  "requires_login": true,
+  "vocab": [
+    {
+      "fr": "lundi",
+      "en": "Monday"
+    },
+    {
+      "fr": "mardi",
+      "en": "Tuesday"
+    },
+    {
+      "fr": "mercredi",
+      "en": "Wednesday"
+    },
+    {
+      "fr": "jeudi",
+      "en": "Thursday"
+    },
+    {
+      "fr": "vendredi",
+      "en": "Friday"
+    },
+    {
+      "fr": "samedi",
+      "en": "Saturday"
+    },
+    {
+      "fr": "dimanche",
+      "en": "Sunday"
+    },
+    {
+      "fr": "aujourd'hui",
+      "en": "today"
+    }
+  ],
+  "tips": [
+    {
+      "title": "No capital letters",
+      "text": "French days of the week are written with a small letter: lundi, not Lundi. The week starts on Monday, not Sunday.",
+      "examples": []
+    },
+    {
+      "title": "Add “le” for every week",
+      "text": "Say le lundi to mean “on Mondays”, every Monday. Say lundi on its own for this coming Monday.",
+      "examples": []
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Which day do you hear?",
+      "speak": "lundi",
+      "choices": [
+        "Monday",
+        "Tuesday",
+        "Sunday"
+      ],
+      "answer": "Monday"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which day do you hear?",
+      "speak": "mardi",
+      "choices": [
+        "Tuesday",
+        "Thursday",
+        "Monday"
+      ],
+      "answer": "Tuesday"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which day do you hear?",
+      "speak": "mercredi",
+      "choices": [
+        "Wednesday",
+        "Friday",
+        "Tuesday"
+      ],
+      "answer": "Wednesday"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which day do you hear?",
+      "speak": "jeudi",
+      "choices": [
+        "Thursday",
+        "Tuesday",
+        "Saturday"
+      ],
+      "answer": "Thursday"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which day do you hear?",
+      "speak": "vendredi",
+      "choices": [
+        "Friday",
+        "Wednesday",
+        "Sunday"
+      ],
+      "answer": "Friday"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which day do you hear?",
+      "speak": "samedi",
+      "choices": [
+        "Saturday",
+        "Sunday",
+        "Monday"
+      ],
+      "answer": "Saturday"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which day do you hear?",
+      "speak": "dimanche",
+      "choices": [
+        "Sunday",
+        "Saturday",
+        "Thursday"
+      ],
+      "answer": "Sunday"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say “today”?",
+      "choices": [
+        "aujourd'hui",
+        "dimanche",
+        "mercredi"
+      ],
+      "answer": "aujourd'hui"
+    },
+    {
+      "type": "matching",
+      "prompt": "Match each day to its French",
+      "pairs": [
+        {
+          "left": "Monday",
+          "right": "lundi"
+        },
+        {
+          "left": "Wednesday",
+          "right": "mercredi"
+        },
+        {
+          "left": "Friday",
+          "right": "vendredi"
+        },
+        {
+          "left": "Saturday",
+          "right": "samedi"
+        },
+        {
+          "left": "Sunday",
+          "right": "dimanche"
+        }
+      ]
+    }
+  ]
+}

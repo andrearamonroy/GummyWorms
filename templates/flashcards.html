@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My flashcards</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='flashcards.css') }}">
+</head>
+<body>
+<div id="account-bar" class="account-bar" data-icon="{{ url_for('static', filename='apple.png') }}"></div>
+<a href="/">← Back to lessons</a>
+<h1>My flashcards</h1>
+
+<p id="loading" class="lead">Loading…</p>
+
+<!-- 0. signed-out visitors -->
+<section id="gate-view" hidden>
+  <div class="gate">
+    <h2>Make your own flashcards</h2>
+    <p class="lead">Sign in with Google to save words and rules from any lesson into sets you can study on any device. The lessons themselves never need an account.</p>
+    <a id="gate-signin" class="signin" href="/login?next=%2Fflashcards">Sign in with Google</a>
+  </div>
+</section>
+
+<!-- 1. your sets -->
+<section id="sets-view" hidden>
+  <p class="lead">Build your own sets from the lessons or type your own words. They are saved in this browser.</p>
+  <div id="set-list"></div>
+  <form id="new-set-form" class="inline-form">
+    <input id="new-set-name" type="text" placeholder="New set name, e.g. Hard numbers" maxlength="40" autocomplete="off" aria-label="New set name">
+    <button class="primary" type="submit">Create set</button>
+  </form>
+</section>
+
+<!-- 2. one set -->
+<section id="edit-view" hidden>
+  <button id="back-to-sets" type="button">← All sets</button>
+  <h2 id="edit-title"></h2>
+  <div class="inline-form">
+    <select id="front-side" aria-label="Which side shows first">
+      <option value="fr">Show French first</option>
+      <option value="en">Show translation first</option>
+    </select>
+    <button id="study-btn" class="primary" type="button">Study</button>
+    <button id="delete-set" class="danger" type="button">Delete set</button>
+  </div>
+
+  <div id="card-list"></div>
+
+  <h3>Add a word</h3>
+  <form id="add-form" class="inline-form">
+    <input id="add-fr" type="text" placeholder="French, e.g. quatre-vingt-dix" maxlength="120" autocomplete="off" aria-label="French">
+    <input id="add-en" type="text" placeholder="Translation, e.g. 90" maxlength="120" autocomplete="off" aria-label="Translation">
+    <input id="add-note" type="text" placeholder="Note (optional)" maxlength="200" autocomplete="off" aria-label="Note">
+    <button class="primary" type="submit">Add</button>
+  </form>
+  <p id="add-msg" class="lead"></p>
+</section>
+
+<!-- 3. study session -->
+<section id="study-view" hidden>
+  <h2 id="study-set-name"></h2>
+  <progress id="study-bar" value="0" max="1"></progress>
+
+  <div id="study-main">
+    <button id="study-card" class="study-card" type="button"></button>
+    <div id="rule-examples"></div>
+    <div class="study-actions">
+      <button id="next-btn" class="primary" type="button">Next</button>
+    </div>
+    <button id="quit-btn" type="button">Quit</button>
+  </div>
+
+  <div id="study-done" hidden>
+    <h3>Session complete!</h3>
+    <p id="done-text" class="lead"></p>
+    <div class="inline-form">
+      <button id="again-session" class="primary" type="button">Study again</button>
+      <button id="back-to-set" type="button">Back to set</button>
+    </div>
+  </div>
+</section>
+
+<script src="{{ url_for('static', filename='sets.js') }}"></script>
+<script src="{{ url_for('static', filename='flashcards.js') }}"></script>
+</body>
+</html>

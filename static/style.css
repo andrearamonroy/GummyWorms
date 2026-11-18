@@ -1,0 +1,225 @@
+:root {
+  --bg: #ffffff; --surface: #ffffff; --hover: #f7f7f7;
+  --text: #4b4b4b; --muted: #777777; --border: #e5e5e5;
+  --green: #58cc02; --green-d: #58a700; --green-bg: #d7ffb8;
+  --blue: #1cb0f6; --blue-d: #1899d6; --blue-bg: #ddf4ff;
+  --red: #ff4b4b; --red-d: #ea2b2b; --red-bg: #ffdfe0;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #131f24; --surface: #1b2a31; --hover: #22343c;
+    --text: #e5e5e5; --muted: #8e9aa0; --border: #37464f;
+    --green-bg: #1f3a12; --blue-bg: #102a38; --red-bg: #3d1c1e;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #131f24; --surface: #1b2a31; --hover: #22343c;
+  --text: #e5e5e5; --muted: #8e9aa0; --border: #37464f;
+  --green-bg: #1f3a12; --blue-bg: #102a38; --red-bg: #3d1c1e;
+}
+
+body {
+  font-family: "Nunito", "DIN Next Rounded", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700; line-height: 1.4;
+  background: var(--bg); color: var(--text);
+  max-width: 560px; margin: 0 auto; padding: 24px 16px 64px;
+}
+h1 { font-size: 1.9rem; font-weight: 800; margin: 0.4em 0 0.2em; }
+h2 { font-size: 1.15rem; font-weight: 800; color: var(--muted); margin: 1.6em 0 0.6em; }
+a { color: var(--blue); }
+
+/* home page lesson list */
+ul { list-style: none; padding: 0; display: grid; gap: 12px; }
+li a {
+  display: block; padding: 16px; color: var(--text); text-decoration: none;
+  border: 2px solid var(--border); border-bottom-width: 4px; border-radius: 16px;
+}
+li a:hover { background: var(--hover); }
+
+/* progress bar */
+progress {
+  -webkit-appearance: none; appearance: none; display: block;
+  width: 100%; height: 16px; margin: 16px 0 24px;
+  border: 0; border-radius: 99px; background: var(--border); overflow: hidden;
+}
+progress::-webkit-progress-bar { background: var(--border); border-radius: 99px; }
+progress::-webkit-progress-value { background: var(--green); border-radius: 99px; transition: width 0.3s; }
+progress::-moz-progress-bar { background: var(--green); border-radius: 99px; }
+
+/* every button gets the raised look */
+button {
+  font: inherit; cursor: pointer; padding: 12px 16px;
+  color: var(--text); background: var(--surface);
+  border: 2px solid var(--border); border-bottom-width: 4px; border-radius: 16px;
+}
+button:hover:not(:disabled) { background: var(--hover); }
+button:active:not(:disabled) { transform: translateY(2px); border-bottom-width: 2px; }
+button:disabled { cursor: default; }
+button:focus-visible, li a:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+
+/* vocab cards */
+#vocab { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+.card { text-align: center; padding: 16px 12px; }
+.card strong { display: block; font-size: 1.2rem; font-weight: 800; color: var(--blue); }
+
+/* exercise text */
+#exercise > p { margin: 0.8em 0 0.3em; color: var(--muted); }
+#exercise > p:first-child { font-size: 1.4rem; font-weight: 800; color: var(--text); }
+#feedback { min-height: 1.5em; margin-top: 16px; font-size: 1.1rem; }
+
+/* listen button */
+.listen { margin: 4px 8px 12px 0; color: var(--blue-d); background: var(--blue-bg); 
+  border-color: var(--blue); }
+/* multiple choice */
+.choice { display: block; width: 100%; margin: 10px 0; text-align: left; font-size: 1.05rem; }
+.choice.correct { color: var(--green-d); background: var(--green-bg); border-color: var(--green); }
+.choice.wrong { color: var(--red-d); background: var(--red-bg); border-color: var(--red); }
+
+/* word bank */
+.answer-area {
+  min-height: 64px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+  padding: 8px 0; color: var(--muted); font-weight: 600;
+  border-top: 2px solid var(--border); border-bottom: 2px solid var(--border);
+}
+.bank-area { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; padding: 12px 0; }
+.tile { font-size: 1.05rem; padding: 10px 16px; }
+.tile:disabled { opacity: 0.6; }
+
+/* matching exercises*/
+.match-board { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px; }
+.match-col { display: grid; gap: 10px; align-content: start; }
+.match-btn { font-size: 1.15rem; padding: 14px 12px; }
+
+
+button.match-btn.picked { color: var(--blue-d); background: var(--blue-bg); border-color: var(--blue); }
+button.match-btn.matched { color: var(--green-d); background: var(--green-bg); border-color: var(--green); }
+button.match-btn.wrong { color: var(--red-d); background: var(--red-bg); border-color: var(--red); }
+
+/* Check / Continue / Finish: any plain button directly inside #exercise */
+#exercise > button:not(.choice):not(.listen) {
+  display: block; width: 100%; margin-top: 24px; padding: 14px;
+  font-size: 1.05rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase;
+  color: #ffffff; background: var(--green); border-color: var(--green-d);
+}
+#exercise > button:not(.choice):not(.listen):hover:not(:disabled) { background: #61d800; }
+#exercise > button:not(.choice):not(.listen):disabled {
+  color: var(--muted); background: var(--border); border-color: var(--border);
+}
+
+/* continue button for exercises */
+#vocab-continue, #tips-continue  {
+  display: block; width: 100%; margin-top: 24px; padding: 14px;
+  font-size: 1.05rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase;
+  color: #ffffff; background: var(--green); border-color: var(--green-d);
+}
+#vocab-continue:hover { background: #61d800; }
+#tips-continue:hover { background: #61d800; }
+
+[hidden] { display: none !important; }
+
+
+/* wider page: this is a web app, so use the room */
+body { max-width: 880px; padding: 32px 24px 80px; }
+
+/* long numbers stay on one line */
+.card strong { white-space: nowrap; margin-bottom: 4px; }
+.match-btn, .tile { white-space: nowrap; }
+#vocab { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+.card { padding: 20px 16px; }
+
+/* tips: equal boxes, more air */
+.tip {
+  background: #1e272c;
+  border: 2px solid #2f3d45;
+  border-radius: 16px;
+  padding: 18px 18px 22px;
+  margin-bottom: 24px;
+}
+.tip-head h2 { color: #fff; font-size: 1.25rem; }
+.tip > p { font-weight: 600; color: #c4d0d6; line-height: 1.55; margin: 0 0 16px; }
+.tip h2 { margin-bottom: 8px; }
+.equation {
+  display: grid;
+  grid-template-columns: repeat(var(--p, 2), minmax(max-content, 1fr) auto) minmax(max-content, 1fr);
+  align-items: stretch;
+  gap: 16px;
+  margin: 0 0 24px;
+}
+.equation .card { padding: 24px 14px; }
+.equation .card strong { font-size: 1.15rem; }
+.op { align-self: center; font-size: 1.6rem; font-weight: 800; color: var(--muted); text-align: center; }
+button.card.result { background: var(--green-bg); border-color: var(--green); }
+button.card.result strong { color: var(--green-d); }
+
+/* narrower screens: stack each equation instead of squeezing it */
+@media (max-width: 920px) {
+  .equation { grid-template-columns: 1fr; gap: 8px; }
+  .match-btn { white-space: normal; }
+}
+/* worm progress bar */
+#progress { --worm-w: 120px; --apple-w: 64px; position: relative; height: 96px; margin: 8px 0 24px; }
+#bar { position: absolute; left: 0; right: calc(var(--apple-w) + 8px); bottom: 0; height: 20px; border-radius: 99px; background: var(--border); }
+#fill { position: absolute; left: 0; bottom: 0; height: 20px; width: 0; border-radius: 99px; background: var(--green); transition: width 1.4s ease-in-out; }
+#worm { position: absolute; left: 0; bottom: 17px; width: var(--worm-w); display: block; transition: left 1.4s ease-in-out; }
+#apple { position: absolute; right: 0; bottom: -3px; width: var(--apple-w); display: block; }
+
+/* ---------- little celebrations ---------- */
+@keyframes pop { 0% { transform: scale(1); } 40% { transform: scale(1.07); } 100% { transform: scale(1); } }
+@keyframes shake { 0%, 100% { transform: translateX(0); } 20% { transform: translateX(-6px); } 40% { transform: translateX(6px); } 60% { transform: translateX(-4px); } 80% { transform: translateX(4px); } }
+@keyframes rise { 0% { opacity: 0; transform: translateY(8px) scale(0.9); } 100% { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes hooray { 0%, 100% { transform: translateY(0) rotate(0); } 25% { transform: translateY(-18px) rotate(-8deg); } 50% { transform: translateY(0) rotate(0); } 75% { transform: translateY(-10px) rotate(6deg); } }
+@keyframes hop { 0%, 100% { transform: translateY(0); } 40% { transform: translateY(-12px); } }
+
+.choice.correct, .match-btn.matched { animation: pop 0.35s ease-out; }
+.choice.wrong, .match-btn.wrong { animation: shake 0.4s; }
+#feedback { font-weight: 800; }
+#feedback.good { color: var(--green-d); animation: rise 0.3s ease-out; }
+#feedback.bad { color: var(--red-d); animation: rise 0.3s ease-out; }
+#feedback.ok { color: var(--blue-d); }
+#apple.hooray { animation: hooray 0.9s ease-in-out 2; }
+#worm.hop { animation: hop 0.5s ease-out 3; }
+.fx-confetti { position: fixed; inset: 0; z-index: 45; pointer-events: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .choice.correct, .match-btn.matched, .choice.wrong, .match-btn.wrong,
+  #feedback.good, #feedback.bad, #apple.hooray, #worm.hop { animation: none; }
+}
+
+.stats { text-align: center; color: #777; font-weight: 700; margin: 0 0 8px; }
+.continue-box { text-align: center; margin: 12px 0 20px; font-weight: 700; }
+.continue-btn {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 14px;
+  background: #58cc02;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  box-shadow: 0 4px 0 #46a302;
+}
+
+#exercise .continue-btn {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 16px;
+  border-radius: 16px;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+  background: #58cc02;
+  box-shadow: 0 4px 0 #46a302;
+  margin-top: 14px;
+}
+#exercise button.again-btn {
+  background: #1cb0f6 !important;
+  border-color: #1899d6 !important;
+  box-shadow: 0 4px 0 #1899d6;
+}
+#lesson-list li { position: relative; }
+.lesson-stars { position: absolute; right: 18px; top: 50%; transform: translateY(-50%); color: #ffb800; letter-spacing: 2px; pointer-events: none; }
+li.done a { color: #46a302; }
+.result-stars { font-size: 2rem; color: #ffb800; text-align: center; margin: 8px 0; }
+#exercise .continue-btn { margin-top: 14px; }

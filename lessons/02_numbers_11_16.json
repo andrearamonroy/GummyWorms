@@ -1,0 +1,141 @@
+{
+  "id": "numbers_11_16",
+  "title": "Numbers 11–16",
+  "vocab": [
+    {
+      "fr": "onze",
+      "en": "11"
+    },
+    {
+      "fr": "douze",
+      "en": "12"
+    },
+    {
+      "fr": "treize",
+      "en": "13"
+    },
+    {
+      "fr": "quatorze",
+      "en": "14"
+    },
+    {
+      "fr": "quinze",
+      "en": "15"
+    },
+    {
+      "fr": "seize",
+      "en": "16"
+    }
+  ],
+  "tips": [
+    {
+      "title": "These six are all different",
+      "text": "Numbers 11 to 16 follow no pattern. Each one is its own word, so learn them one by one.",
+      "examples": []
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "onze",
+      "choices": [
+        "11",
+        "1",
+        "12"
+      ],
+      "answer": "11"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "douze",
+      "choices": [
+        "2",
+        "12",
+        "13"
+      ],
+      "answer": "12"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "treize",
+      "choices": [
+        "3",
+        "14",
+        "13"
+      ],
+      "answer": "13"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "quatorze",
+      "choices": [
+        "14",
+        "4",
+        "15"
+      ],
+      "answer": "14"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "quinze",
+      "choices": [
+        "5",
+        "15",
+        "16"
+      ],
+      "answer": "15"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "seize",
+      "choices": [
+        "6",
+        "17",
+        "16"
+      ],
+      "answer": "16"
+    },
+    {
+      "type": "matching",
+      "prompt": "Match each number to its French spelling",
+      "pairs": [
+        {
+          "left": "11",
+          "right": "onze"
+        },
+        {
+          "left": "12",
+          "right": "douze"
+        },
+        {
+          "left": "13",
+          "right": "treize"
+        },
+        {
+          "left": "14",
+          "right": "quatorze"
+        },
+        {
+          "left": "15",
+          "right": "quinze"
+        },
+        {
+          "left": "16",
+          "right": "seize"
+        }
+      ]
+    }
+  ]
+}

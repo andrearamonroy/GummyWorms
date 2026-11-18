@@ -1,0 +1,178 @@
+{
+  "id": "numbers_17_20",
+  "title": "Numbers 17–20",
+  "vocab": [
+    {
+      "fr": "dix-sept",
+      "en": "17"
+    },
+    {
+      "fr": "dix-huit",
+      "en": "18"
+    },
+    {
+      "fr": "dix-neuf",
+      "en": "19"
+    },
+    {
+      "fr": "vingt",
+      "en": "20"
+    }
+  ],
+  "tips": [
+    {
+      "title": "Seventeen is ten plus seven",
+      "text": "From 17 on, French builds the number: say ten, then add the unit.",
+      "examples": [
+        {
+          "parts": [
+            {
+              "fr": "dix",
+              "en": "10"
+            },
+            {
+              "fr": "sept",
+              "en": "7"
+            }
+          ],
+          "result": {
+            "fr": "dix-sept",
+            "en": "17"
+          }
+        },
+        {
+          "parts": [
+            {
+              "fr": "dix",
+              "en": "10"
+            },
+            {
+              "fr": "huit",
+              "en": "8"
+            }
+          ],
+          "result": {
+            "fr": "dix-huit",
+            "en": "18"
+          }
+        },
+        {
+          "parts": [
+            {
+              "fr": "dix",
+              "en": "10"
+            },
+            {
+              "fr": "neuf",
+              "en": "9"
+            }
+          ],
+          "result": {
+            "fr": "dix-neuf",
+            "en": "19"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "dix-sept",
+      "choices": [
+        "17",
+        "7",
+        "18"
+      ],
+      "answer": "17"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "dix-huit",
+      "choices": [
+        "8",
+        "18",
+        "19"
+      ],
+      "answer": "18"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "dix-neuf",
+      "choices": [
+        "9",
+        "20",
+        "19"
+      ],
+      "answer": "19"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "vingt",
+      "choices": [
+        "20",
+        "10",
+        "21"
+      ],
+      "answer": "20"
+    },
+    {
+      "type": "word_bank",
+      "prompt": "17 = 10 + 7",
+      "bank": [
+        "dix",
+        "sept",
+        "huit",
+        "vingt"
+      ],
+      "answer": [
+        "dix",
+        "sept"
+      ]
+    },
+    {
+      "type": "word_bank",
+      "prompt": "19 = 10 + 9",
+      "bank": [
+        "dix",
+        "neuf",
+        "sept",
+        "vingt"
+      ],
+      "answer": [
+        "dix",
+        "neuf"
+      ]
+    },
+    {
+      "type": "matching",
+      "prompt": "Match each number to its French spelling",
+      "pairs": [
+        {
+          "left": "17",
+          "right": "dix-sept"
+        },
+        {
+          "left": "18",
+          "right": "dix-huit"
+        },
+        {
+          "left": "19",
+          "right": "dix-neuf"
+        },
+        {
+          "left": "20",
+          "right": "vingt"
+        }
+      ]
+    }
+  ]
+}

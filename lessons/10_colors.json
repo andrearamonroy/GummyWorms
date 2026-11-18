@@ -1,0 +1,155 @@
+{
+  "id": "colors",
+  "title": "Colors",
+  "requires_login": true,
+  "vocab": [
+    {
+      "fr": "rouge",
+      "en": "red"
+    },
+    {
+      "fr": "bleu",
+      "en": "blue"
+    },
+    {
+      "fr": "vert",
+      "en": "green"
+    },
+    {
+      "fr": "jaune",
+      "en": "yellow"
+    },
+    {
+      "fr": "noir",
+      "en": "black"
+    },
+    {
+      "fr": "blanc",
+      "en": "white"
+    },
+    {
+      "fr": "rose",
+      "en": "pink"
+    },
+    {
+      "fr": "gris",
+      "en": "gray"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Which color do you hear?",
+      "speak": "rouge",
+      "choices": [
+        "red",
+        "yellow",
+        "white"
+      ],
+      "answer": "red"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which color do you hear?",
+      "speak": "bleu",
+      "choices": [
+        "black",
+        "blue",
+        "pink"
+      ],
+      "answer": "blue"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which color do you hear?",
+      "speak": "vert",
+      "choices": [
+        "white",
+        "gray",
+        "green"
+      ],
+      "answer": "green"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which color do you hear?",
+      "speak": "jaune",
+      "choices": [
+        "yellow",
+        "pink",
+        "red"
+      ],
+      "answer": "yellow"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which color do you hear?",
+      "speak": "noir",
+      "choices": [
+        "gray",
+        "black",
+        "blue"
+      ],
+      "answer": "black"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which color do you hear?",
+      "speak": "blanc",
+      "choices": [
+        "red",
+        "green",
+        "white"
+      ],
+      "answer": "white"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which color do you hear?",
+      "speak": "rose",
+      "choices": [
+        "pink",
+        "blue",
+        "yellow"
+      ],
+      "answer": "pink"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Which color do you hear?",
+      "speak": "gris",
+      "choices": [
+        "green",
+        "gray",
+        "black"
+      ],
+      "answer": "gray"
+    },
+    {
+      "type": "matching",
+      "prompt": "Match each color to its French word",
+      "pairs": [
+        {
+          "left": "red",
+          "right": "rouge"
+        },
+        {
+          "left": "green",
+          "right": "vert"
+        },
+        {
+          "left": "black",
+          "right": "noir"
+        },
+        {
+          "left": "pink",
+          "right": "rose"
+        },
+        {
+          "left": "gray",
+          "right": "gris"
+        }
+      ]
+    }
+  ]
+}

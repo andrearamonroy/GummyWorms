@@ -1,0 +1,25 @@
+{
+  "id": "unit1_lesson1",
+  "title": "Greetings",
+  "vocab": [
+    { "fr": "Bonjour", "en": "Hello" },
+    { "fr": "Bonsoir", "en": "Good evening" },
+    { "fr": "Merci", "en": "Thank you" },
+    { "fr": "Au revoir", "en": "Goodbye" }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "prompt": "What does Merci mean?",
+      "speak": "Merci",
+      "choices": ["Hello", "Thank you", "Goodbye"],
+      "answer": "Thank you"
+    },
+    {
+      "type": "word_bank",
+      "prompt": "Hello, thank you",
+      "bank": ["merci", "Au revoir", "Bonjour", "Bonsoir"],
+      "answer": ["Bonjour", "merci"]
+    }
+  ]
+}

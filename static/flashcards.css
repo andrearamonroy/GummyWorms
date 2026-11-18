@@ -1,0 +1,137 @@
+/* gummy worms: flashcards.css, version 6 */
+/* ---------- colored buttons (used by the flashcards page and the popup) ---------- */
+button.primary { color: #ffffff; background: var(--green); border-color: var(--green-d); font-weight: 800; }
+button.primary:hover:not(:disabled) { background: #61d800; }
+button.primary:disabled { color: var(--muted); background: var(--border); border-color: var(--border); }
+button.danger { color: var(--red-d); background: var(--red-bg); border-color: var(--red); font-weight: 800; }
+button.danger:hover:not(:disabled) { background: var(--red-bg); }
+
+/* ---------- save buttons on the lesson page ---------- */
+.vcard { position: relative; }
+.vcard .card { width: 100%; height: 100%; }
+.save-word {
+  position: absolute; top: 8px; right: 8px; width: 34px; height: 34px;
+  padding: 0; border-radius: 50%; font-size: 1.2rem; line-height: 1; color: var(--blue-d);
+}
+.save-all, .save-rule { color: var(--blue-d); background: var(--blue-bg); border-color: var(--blue); font-weight: 800; }
+.save-all { margin: 0 0 16px; }
+.tip-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+.tip-head h2 { margin: 0; }
+.fc-link { display: inline-block; margin: 8px 0; font-weight: 800; }
+
+/* ---------- the "Save to a set" popup ---------- */
+.fc-overlay {
+  position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center;
+  padding: 16px; background: rgba(0, 0, 0, 0.55);
+}
+.fc-modal {
+  width: 100%; max-width: 440px; max-height: 90vh; overflow: auto; padding: 24px;
+  color: var(--text); background: var(--surface); border: 2px solid var(--border); border-radius: 20px;
+}
+.fc-modal h3 { margin: 0 0 4px; font-size: 1.3rem; }
+.fc-sub { margin: 0 0 16px; color: var(--muted); }
+.fc-setlist { display: grid; gap: 8px; margin-bottom: 16px; }
+.fc-setlist button { text-align: left; }
+.fc-new { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.fc-toast {
+  position: fixed; left: 50%; bottom: 24px; z-index: 60; transform: translateX(-50%);
+  max-width: calc(100% - 32px); padding: 12px 20px; color: #ffffff; background: var(--green-d);
+  border-radius: 99px; font-weight: 800; text-align: center;
+}
+
+/* ---------- flashcards page ---------- */
+.lead { color: var(--muted); }
+.inline-form { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+input[type="text"], select {
+  flex: 1 1 180px; min-width: 0; padding: 12px 14px; font: inherit;
+  color: var(--text); background: var(--surface); border: 2px solid var(--border); border-radius: 12px;
+}
+input[type="text"]:focus-visible, select:focus-visible { outline: 3px solid var(--blue); outline-offset: 1px; }
+
+.set-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  margin: 12px 0; padding: 16px;
+  border: 2px solid var(--border); border-bottom-width: 4px; border-radius: 16px;
+}
+.set-row .name { font-size: 1.15rem; font-weight: 800; }
+.set-row .meta { color: var(--muted); font-size: 0.95rem; }
+
+.card-row { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 2px solid var(--border); }
+.card-row .text { flex: 1; min-width: 0; }
+.card-row .fr { font-weight: 800; }
+.card-row .en { color: var(--muted); }
+.badge {
+  flex: none; padding: 6px 10px; border-radius: 99px; font-size: 0.85rem; font-weight: 800;
+  color: var(--blue-d); background: var(--blue-bg);
+}
+
+/* ---------- study session ---------- */
+#study-bar {
+  -webkit-appearance: none; appearance: none; display: block; width: 100%; height: 16px; margin: 16px 0 8px;
+  border: 0; border-radius: 99px; background: var(--border); overflow: hidden;
+}
+#study-bar::-webkit-progress-bar { background: var(--border); border-radius: 99px; }
+#study-bar::-webkit-progress-value { background: var(--green); border-radius: 99px; transition: width 0.3s; }
+#study-bar::-moz-progress-bar { background: var(--green); border-radius: 99px; }
+
+.study-card {
+  display: block; width: 100%; min-height: 240px; margin: 24px 0 16px; padding: 32px 24px;
+  text-align: center; border-radius: 24px;
+}
+.study-big { display: block; font-size: 2.2rem; font-weight: 800; line-height: 1.2; color: var(--blue); }
+.study-sub { display: block; margin-top: 16px; font-size: 1.3rem; }
+.study-hint { display: block; margin-top: 16px; font-size: 0.95rem; font-weight: 600; color: var(--muted); }
+
+.example-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 8px 0; }
+.example-detail { color: var(--muted); }
+
+.study-actions { margin: 16px 0; }
+.study-actions > button { display: block; width: 100%; padding: 14px; font-size: 1.05rem; }
+.grade-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.grade-row button { padding: 14px; font-size: 1.05rem; }
+
+/* ---------- account bar and sign-in ---------- */
+/* the apple menu, top right of every page */
+.account-bar { position: fixed; top: 12px; right: 12px; z-index: 40; }
+h1 { padding-right: 64px; }                       /* keeps long titles clear of the apple */
+.menu-btn { display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; padding: 0; border-radius: 50%; background: var(--surface); }
+.menu-btn img { display: block; width: 34px; height: auto; }
+.menu-btn[aria-expanded="true"] { background: var(--hover); border-color: var(--blue); }
+.menu-panel {
+  position: absolute; top: calc(100% + 8px); right: 0; display: grid; gap: 4px; box-sizing: border-box;
+  width: min(300px, calc(100vw - 24px)); padding: 12px;
+  background: var(--surface); border: 2px solid var(--border); border-bottom-width: 4px; border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); overflow: hidden;
+}
+.menu-who { margin: 4px 8px 8px; font-weight: 800; color: var(--text); }
+.menu-item {
+  display: block; width: 100%; padding: 12px 14px; text-align: left; font: inherit; font-weight: 700;
+  color: var(--text); text-decoration: none; background: transparent; border: 0; border-radius: 12px; cursor: pointer;
+}
+/* links count their padding inside their width (buttons already do), so rows never poke out of the panel */
+a.menu-item { box-sizing: border-box; max-width: 100%; }
+.menu-item:hover, .menu-item:focus-visible { background: var(--hover); }
+.menu-item.current { color: var(--blue-d); }
+.menu-item.danger-item { color: var(--red-d); }
+.menu-divider { height: 2px; margin: 6px 0; background: var(--border); border: 0; }
+a.menu-item.signin-item { text-align: center; font-weight: 800; color: #ffffff; background: var(--green); }
+a.menu-item.signin-item:hover { background: #61d800; }
+a.signin {
+  display: inline-block; padding: 12px 16px; font-weight: 800; text-decoration: none;
+  color: var(--text); background: var(--surface); border: 2px solid var(--border); border-bottom-width: 4px; border-radius: 16px;
+}
+a.signin:hover { background: var(--hover); }
+.fc-hint { margin: 0 0 12px; color: var(--muted); font-size: 0.95rem; }
+
+.gate { padding: 24px; border: 2px solid var(--border); border-bottom-width: 4px; border-radius: 20px; }
+.gate h2 { margin-top: 0; }
+.fc-new a.signin { flex: 1 1 auto; text-align: center; }
+
+/* ---------- locked lessons ---------- */
+.lock { margin-left: 8px; font-size: 0.9em; }
+
+/* ---------- home page header: logo and site name ---------- */
+.brand { margin: 8px 0 4px; text-align: center; }
+.brand-logo { display: block; width: 140px; height: auto; margin: 0 auto; }
+.brand-name { margin: -4px 0 0; font-size: 2.4rem; line-height: 1.1; font-weight: 800; letter-spacing: 0.01em; color: var(--green-d); }
+h1.home-title { margin: 4px 0 24px; padding-right: 0; text-align: center; font-size: 1.5rem; }

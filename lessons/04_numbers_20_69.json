@@ -1,0 +1,397 @@
+{
+  "id": "numbers_20_69",
+  "title": "Numbers 20–69",
+  "vocab": [
+    {
+      "fr": "vingt",
+      "en": "20"
+    },
+    {
+      "fr": "trente",
+      "en": "30"
+    },
+    {
+      "fr": "quarante",
+      "en": "40"
+    },
+    {
+      "fr": "cinquante",
+      "en": "50"
+    },
+    {
+      "fr": "soixante",
+      "en": "60"
+    },
+    {
+      "fr": "vingt et un",
+      "en": "21"
+    },
+    {
+      "fr": "vingt-deux",
+      "en": "22"
+    },
+    {
+      "fr": "trente et un",
+      "en": "31"
+    },
+    {
+      "fr": "trente-cinq",
+      "en": "35"
+    },
+    {
+      "fr": "quarante et un",
+      "en": "41"
+    },
+    {
+      "fr": "quarante-huit",
+      "en": "48"
+    },
+    {
+      "fr": "cinquante-trois",
+      "en": "53"
+    },
+    {
+      "fr": "soixante et un",
+      "en": "61"
+    },
+    {
+      "fr": "soixante-neuf",
+      "en": "69"
+    }
+  ],
+  "tips": [
+    {
+      "title": "Tens plus units",
+      "text": "Say the ten, then the unit, joined with a hyphen. The same pattern works all the way up to 69.",
+      "examples": [
+        {
+          "parts": [
+            {
+              "fr": "vingt",
+              "en": "20"
+            },
+            {
+              "fr": "deux",
+              "en": "2"
+            }
+          ],
+          "result": {
+            "fr": "vingt-deux",
+            "en": "22"
+          }
+        },
+        {
+          "parts": [
+            {
+              "fr": "trente",
+              "en": "30"
+            },
+            {
+              "fr": "cinq",
+              "en": "5"
+            }
+          ],
+          "result": {
+            "fr": "trente-cinq",
+            "en": "35"
+          }
+        },
+        {
+          "parts": [
+            {
+              "fr": "quarante",
+              "en": "40"
+            },
+            {
+              "fr": "huit",
+              "en": "8"
+            }
+          ],
+          "result": {
+            "fr": "quarante-huit",
+            "en": "48"
+          }
+        }
+      ]
+    },
+    {
+      "title": "“et un” for 21, 31, 41, 51, 61",
+      "text": "When the unit is 1, French adds “et”: vingt et un. For 2 to 9 it is just a hyphen, with no “et”.",
+      "examples": [
+        {
+          "parts": [
+            {
+              "fr": "vingt",
+              "en": "20"
+            },
+            {
+              "fr": "un",
+              "en": "1"
+            }
+          ],
+          "result": {
+            "fr": "vingt et un",
+            "en": "21"
+          }
+        },
+        {
+          "parts": [
+            {
+              "fr": "trente",
+              "en": "30"
+            },
+            {
+              "fr": "un",
+              "en": "1"
+            }
+          ],
+          "result": {
+            "fr": "trente et un",
+            "en": "31"
+          }
+        },
+        {
+          "parts": [
+            {
+              "fr": "quarante",
+              "en": "40"
+            },
+            {
+              "fr": "un",
+              "en": "1"
+            }
+          ],
+          "result": {
+            "fr": "quarante et un",
+            "en": "41"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "vingt",
+      "choices": [
+        "20",
+        "10",
+        "21"
+      ],
+      "answer": "20"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "trente",
+      "choices": [
+        "20",
+        "30",
+        "31"
+      ],
+      "answer": "30"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "quarante",
+      "choices": [
+        "30",
+        "41",
+        "40"
+      ],
+      "answer": "40"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "cinquante",
+      "choices": [
+        "50",
+        "40",
+        "51"
+      ],
+      "answer": "50"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "soixante",
+      "choices": [
+        "50",
+        "60",
+        "61"
+      ],
+      "answer": "60"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "vingt et un",
+      "choices": [
+        "11",
+        "22",
+        "21"
+      ],
+      "answer": "21"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "vingt-deux",
+      "choices": [
+        "22",
+        "12",
+        "23"
+      ],
+      "answer": "22"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "trente et un",
+      "choices": [
+        "21",
+        "31",
+        "32"
+      ],
+      "answer": "31"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "trente-cinq",
+      "choices": [
+        "25",
+        "36",
+        "35"
+      ],
+      "answer": "35"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "quarante et un",
+      "choices": [
+        "41",
+        "31",
+        "42"
+      ],
+      "answer": "41"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "quarante-huit",
+      "choices": [
+        "38",
+        "48",
+        "49"
+      ],
+      "answer": "48"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "cinquante-trois",
+      "choices": [
+        "43",
+        "54",
+        "53"
+      ],
+      "answer": "53"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "soixante et un",
+      "choices": [
+        "61",
+        "51",
+        "62"
+      ],
+      "answer": "61"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "soixante-neuf",
+      "choices": [
+        "59",
+        "69",
+        "70"
+      ],
+      "answer": "69"
+    },
+    {
+      "type": "word_bank",
+      "prompt": "22 = 20 + 2",
+      "bank": [
+        "vingt",
+        "deux",
+        "trente",
+        "trois"
+      ],
+      "answer": [
+        "vingt",
+        "deux"
+      ]
+    },
+    {
+      "type": "word_bank",
+      "prompt": "31 = 30 + 1",
+      "bank": [
+        "trente",
+        "et",
+        "un",
+        "deux"
+      ],
+      "answer": [
+        "trente",
+        "et",
+        "un"
+      ]
+    },
+    {
+      "type": "matching",
+      "prompt": "Match each number to its French spelling",
+      "pairs": [
+        {
+          "left": "30",
+          "right": "trente"
+        },
+        {
+          "left": "50",
+          "right": "cinquante"
+        },
+        {
+          "left": "22",
+          "right": "vingt-deux"
+        },
+        {
+          "left": "41",
+          "right": "quarante et un"
+        },
+        {
+          "left": "69",
+          "right": "soixante-neuf"
+        }
+      ]
+    }
+  ]
+}

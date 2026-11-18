@@ -1,0 +1,170 @@
+{
+  "id": "introducing_yourself",
+  "title": "Introducing yourself",
+  "vocab": [
+    {
+      "fr": "Je m'appelle",
+      "en": "My name is"
+    },
+    {
+      "fr": "Comment tu t'appelles ?",
+      "en": "What's your name? (friends)"
+    },
+    {
+      "fr": "Comment vous appelez-vous ?",
+      "en": "What's your name? (polite)"
+    },
+    {
+      "fr": "Enchanté",
+      "en": "Nice to meet you"
+    },
+    {
+      "fr": "J'habite à",
+      "en": "I live in"
+    },
+    {
+      "fr": "J'ai vingt ans",
+      "en": "I am twenty years old"
+    },
+    {
+      "fr": "Je suis de",
+      "en": "I am from"
+    },
+    {
+      "fr": "Et toi ?",
+      "en": "And you?"
+    }
+  ],
+  "tips": [
+    {
+      "title": "Je m'appelle = I call myself",
+      "text": "French says “I call myself Marie”, not “my name is Marie”. Learn Je m'appelle as one block, then add your name.",
+      "examples": []
+    },
+    {
+      "title": "Age uses “to have”",
+      "text": "In French you have your age. J'ai vingt ans is word for word “I have twenty years”. You never say “I am twenty”.",
+      "examples": []
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "prompt": "What do you hear?",
+      "speak": "Enchanté",
+      "choices": [
+        "Nice to meet you",
+        "Thank you",
+        "Goodbye"
+      ],
+      "answer": "Nice to meet you"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What do you hear?",
+      "speak": "Comment tu t'appelles ?",
+      "choices": [
+        "What's your name?",
+        "How are you?",
+        "Where do you live?"
+      ],
+      "answer": "What's your name?"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What do you hear?",
+      "speak": "J'habite à Paris",
+      "choices": [
+        "I live in Paris",
+        "I am from Paris",
+        "I love Paris"
+      ],
+      "answer": "I live in Paris"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What do you hear?",
+      "speak": "J'ai vingt ans",
+      "choices": [
+        "I am twenty years old",
+        "I live at number twenty",
+        "I have twenty friends"
+      ],
+      "answer": "I am twenty years old"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say “My name is Paul”?",
+      "choices": [
+        "Je m'appelle Paul",
+        "Tu t'appelles Paul",
+        "J'habite Paul"
+      ],
+      "answer": "Je m'appelle Paul"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say “Nice to meet you”?",
+      "choices": [
+        "Enchanté",
+        "Et toi ?",
+        "J'ai vingt ans"
+      ],
+      "answer": "Enchanté"
+    },
+    {
+      "type": "word_bank",
+      "prompt": "Translate: I live in Lyon",
+      "bank": [
+        "J'habite",
+        "à",
+        "Lyon",
+        "m'appelle",
+        "ans"
+      ],
+      "answer": [
+        "J'habite",
+        "à",
+        "Lyon"
+      ]
+    },
+    {
+      "type": "word_bank",
+      "prompt": "Translate: My name is Sophie",
+      "bank": [
+        "Je",
+        "m'appelle",
+        "Sophie",
+        "habite",
+        "à"
+      ],
+      "answer": [
+        "Je",
+        "m'appelle",
+        "Sophie"
+      ]
+    },
+    {
+      "type": "matching",
+      "prompt": "Match each phrase to its French",
+      "pairs": [
+        {
+          "left": "Nice to meet you",
+          "right": "Enchanté"
+        },
+        {
+          "left": "And you?",
+          "right": "Et toi ?"
+        },
+        {
+          "left": "My name is",
+          "right": "Je m'appelle"
+        },
+        {
+          "left": "I live in",
+          "right": "J'habite à"
+        }
+      ]
+    }
+  ]
+}

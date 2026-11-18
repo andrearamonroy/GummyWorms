@@ -1,0 +1,186 @@
+{
+  "id": "politeness",
+  "title": "Politeness and basics",
+  "vocab": [
+    {
+      "fr": "s'il vous plaît",
+      "en": "please"
+    },
+    {
+      "fr": "merci",
+      "en": "thank you"
+    },
+    {
+      "fr": "de rien",
+      "en": "you're welcome"
+    },
+    {
+      "fr": "pardon",
+      "en": "sorry / excuse me"
+    },
+    {
+      "fr": "oui",
+      "en": "yes"
+    },
+    {
+      "fr": "non",
+      "en": "no"
+    },
+    {
+      "fr": "Je ne comprends pas",
+      "en": "I don't understand"
+    },
+    {
+      "fr": "Parlez-vous anglais ?",
+      "en": "Do you speak English?"
+    }
+  ],
+  "tips": [
+    {
+      "title": "Tu or vous?",
+      "text": "French has two ways to say “you”. Use tu with friends, family and children. Use vous with strangers, older people and in shops. When unsure, vous is always safe.",
+      "examples": []
+    },
+    {
+      "title": "Say merci beaucoup",
+      "text": "Add beaucoup to make it stronger: merci beaucoup means “thank you very much”.",
+      "examples": []
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "prompt": "What do you hear?",
+      "speak": "merci",
+      "choices": [
+        "Thank you",
+        "Please",
+        "Sorry"
+      ],
+      "answer": "Thank you"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What do you hear?",
+      "speak": "de rien",
+      "choices": [
+        "You're welcome",
+        "Thank you",
+        "Goodbye"
+      ],
+      "answer": "You're welcome"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What do you hear?",
+      "speak": "pardon",
+      "choices": [
+        "Sorry / excuse me",
+        "Please",
+        "Yes"
+      ],
+      "answer": "Sorry / excuse me"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What do you hear?",
+      "speak": "s'il vous plaît",
+      "choices": [
+        "Please",
+        "Thank you",
+        "No"
+      ],
+      "answer": "Please"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What do you hear?",
+      "speak": "Je ne comprends pas",
+      "choices": [
+        "I don't understand",
+        "I don't know",
+        "I don't speak French"
+      ],
+      "answer": "I don't understand"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What do you hear?",
+      "speak": "Parlez-vous anglais ?",
+      "choices": [
+        "Do you speak English?",
+        "Do you speak French?",
+        "Do you understand me?"
+      ],
+      "answer": "Do you speak English?"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say “You're welcome”?",
+      "choices": [
+        "de rien",
+        "merci",
+        "pardon"
+      ],
+      "answer": "de rien"
+    },
+    {
+      "type": "word_bank",
+      "prompt": "Translate: I don't understand",
+      "bank": [
+        "Je",
+        "ne",
+        "comprends",
+        "pas",
+        "merci",
+        "oui"
+      ],
+      "answer": [
+        "Je",
+        "ne",
+        "comprends",
+        "pas"
+      ]
+    },
+    {
+      "type": "word_bank",
+      "prompt": "Translate: Do you speak English?",
+      "bank": [
+        "Parlez-vous",
+        "anglais",
+        "merci",
+        "pardon"
+      ],
+      "answer": [
+        "Parlez-vous",
+        "anglais"
+      ]
+    },
+    {
+      "type": "matching",
+      "prompt": "Match each word to its French",
+      "pairs": [
+        {
+          "left": "please",
+          "right": "s'il vous plaît"
+        },
+        {
+          "left": "thank you",
+          "right": "merci"
+        },
+        {
+          "left": "sorry",
+          "right": "pardon"
+        },
+        {
+          "left": "yes",
+          "right": "oui"
+        },
+        {
+          "left": "no",
+          "right": "non"
+        }
+      ]
+    }
+  ]
+}

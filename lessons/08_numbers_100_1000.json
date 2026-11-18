@@ -1,0 +1,343 @@
+{
+  "id": "numbers_100_1000",
+  "title": "Numbers 100–1000",
+  "vocab": [
+    {
+      "fr": "cent",
+      "en": "100"
+    },
+    {
+      "fr": "cent un",
+      "en": "101"
+    },
+    {
+      "fr": "cent vingt",
+      "en": "120"
+    },
+    {
+      "fr": "deux cents",
+      "en": "200"
+    },
+    {
+      "fr": "deux cent un",
+      "en": "201"
+    },
+    {
+      "fr": "deux cent cinquante",
+      "en": "250"
+    },
+    {
+      "fr": "trois cents",
+      "en": "300"
+    },
+    {
+      "fr": "neuf cents",
+      "en": "900"
+    },
+    {
+      "fr": "mille",
+      "en": "1000"
+    },
+    {
+      "fr": "deux mille",
+      "en": "2000"
+    }
+  ],
+  "tips": [
+    {
+      "title": "Two hundred is two times a hundred",
+      "text": "Say the number, then cent. From 200 up, cent takes an s: deux cents. For 100 on its own, just say cent, never “un cent”.",
+      "examples": [
+        {
+          "op": "×",
+          "parts": [
+            {
+              "fr": "deux",
+              "en": "2"
+            },
+            {
+              "fr": "cent",
+              "en": "100"
+            }
+          ],
+          "result": {
+            "fr": "deux cents",
+            "en": "200"
+          }
+        },
+        {
+          "op": "×",
+          "parts": [
+            {
+              "fr": "trois",
+              "en": "3"
+            },
+            {
+              "fr": "cent",
+              "en": "100"
+            }
+          ],
+          "result": {
+            "fr": "trois cents",
+            "en": "300"
+          }
+        },
+        {
+          "op": "×",
+          "parts": [
+            {
+              "fr": "neuf",
+              "en": "9"
+            },
+            {
+              "fr": "cent",
+              "en": "100"
+            }
+          ],
+          "result": {
+            "fr": "neuf cents",
+            "en": "900"
+          }
+        }
+      ]
+    },
+    {
+      "title": "The s drops when another number follows",
+      "text": "As soon as another number comes after cents, the s disappears: deux cent un.",
+      "examples": [
+        {
+          "parts": [
+            {
+              "fr": "deux cents",
+              "en": "200"
+            },
+            {
+              "fr": "un",
+              "en": "1"
+            }
+          ],
+          "result": {
+            "fr": "deux cent un",
+            "en": "201"
+          }
+        },
+        {
+          "parts": [
+            {
+              "fr": "deux cents",
+              "en": "200"
+            },
+            {
+              "fr": "cinquante",
+              "en": "50"
+            }
+          ],
+          "result": {
+            "fr": "deux cent cinquante",
+            "en": "250"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Mille never takes an s",
+      "text": "Mille is 1000, and it never changes: deux mille, trois mille.",
+      "examples": [
+        {
+          "op": "×",
+          "parts": [
+            {
+              "fr": "deux",
+              "en": "2"
+            },
+            {
+              "fr": "mille",
+              "en": "1000"
+            }
+          ],
+          "result": {
+            "fr": "deux mille",
+            "en": "2000"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "cent",
+      "choices": [
+        "100",
+        "10",
+        "1000"
+      ],
+      "answer": "100"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "cent un",
+      "choices": [
+        "201",
+        "101",
+        "110"
+      ],
+      "answer": "101"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "cent vingt",
+      "choices": [
+        "102",
+        "220",
+        "120"
+      ],
+      "answer": "120"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "deux cents",
+      "choices": [
+        "200",
+        "20",
+        "2000"
+      ],
+      "answer": "200"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "deux cent un",
+      "choices": [
+        "101",
+        "201",
+        "210"
+      ],
+      "answer": "201"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "deux cent cinquante",
+      "choices": [
+        "205",
+        "150",
+        "250"
+      ],
+      "answer": "250"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "trois cents",
+      "choices": [
+        "300",
+        "30",
+        "3000"
+      ],
+      "answer": "300"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "neuf cents",
+      "choices": [
+        "90",
+        "900",
+        "9000"
+      ],
+      "answer": "900"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "mille",
+      "choices": [
+        "100",
+        "10000",
+        "1000"
+      ],
+      "answer": "1000"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "deux mille",
+      "choices": [
+        "2000",
+        "200",
+        "20"
+      ],
+      "answer": "2000"
+    },
+    {
+      "type": "word_bank",
+      "prompt": "Build 201",
+      "bank": [
+        "deux",
+        "cent",
+        "cents",
+        "un"
+      ],
+      "answer": [
+        "deux",
+        "cent",
+        "un"
+      ]
+    },
+    {
+      "type": "word_bank",
+      "prompt": "Build 2000",
+      "bank": [
+        "deux",
+        "mille",
+        "milles",
+        "cent"
+      ],
+      "answer": [
+        "deux",
+        "mille"
+      ]
+    },
+    {
+      "type": "matching",
+      "prompt": "Match each number to its French spelling",
+      "pairs": [
+        {
+          "left": "100",
+          "right": "cent"
+        },
+        {
+          "left": "200",
+          "right": "deux cents"
+        },
+        {
+          "left": "201",
+          "right": "deux cent un"
+        },
+        {
+          "left": "1000",
+          "right": "mille"
+        },
+        {
+          "left": "2000",
+          "right": "deux mille"
+        }
+      ]
+    }
+  ]
+}

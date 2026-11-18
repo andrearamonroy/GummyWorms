@@ -1,0 +1,278 @@
+{
+  "id": "numbers_90s",
+  "title": "Numbers 90–99",
+  "vocab": [
+    {
+      "fr": "quatre-vingt-dix",
+      "en": "90"
+    },
+    {
+      "fr": "quatre-vingt-onze",
+      "en": "91"
+    },
+    {
+      "fr": "quatre-vingt-douze",
+      "en": "92"
+    },
+    {
+      "fr": "quatre-vingt-treize",
+      "en": "93"
+    },
+    {
+      "fr": "quatre-vingt-quatorze",
+      "en": "94"
+    },
+    {
+      "fr": "quatre-vingt-quinze",
+      "en": "95"
+    },
+    {
+      "fr": "quatre-vingt-seize",
+      "en": "96"
+    },
+    {
+      "fr": "quatre-vingt-dix-sept",
+      "en": "97"
+    },
+    {
+      "fr": "quatre-vingt-dix-huit",
+      "en": "98"
+    },
+    {
+      "fr": "quatre-vingt-dix-neuf",
+      "en": "99"
+    }
+  ],
+  "tips": [
+    {
+      "title": "Ninety is eighty plus ten",
+      "text": "Keep counting from 80: 90 is 80 + 10, 91 is 80 + 11, and 97 is 80 + 17. There is no “et”, even for 91.",
+      "examples": [
+        {
+          "parts": [
+            {
+              "fr": "quatre-vingt",
+              "en": "80"
+            },
+            {
+              "fr": "dix",
+              "en": "10"
+            }
+          ],
+          "result": {
+            "fr": "quatre-vingt-dix",
+            "en": "90"
+          }
+        },
+        {
+          "parts": [
+            {
+              "fr": "quatre-vingt",
+              "en": "80"
+            },
+            {
+              "fr": "onze",
+              "en": "11"
+            }
+          ],
+          "result": {
+            "fr": "quatre-vingt-onze",
+            "en": "91"
+          }
+        },
+        {
+          "parts": [
+            {
+              "fr": "quatre-vingt",
+              "en": "80"
+            },
+            {
+              "fr": "dix-sept",
+              "en": "17"
+            }
+          ],
+          "result": {
+            "fr": "quatre-vingt-dix-sept",
+            "en": "97"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "quatre-vingt-dix",
+      "choices": [
+        "90",
+        "80",
+        "91"
+      ],
+      "answer": "90"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "quatre-vingt-onze",
+      "choices": [
+        "81",
+        "91",
+        "92"
+      ],
+      "answer": "91"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "quatre-vingt-douze",
+      "choices": [
+        "82",
+        "93",
+        "92"
+      ],
+      "answer": "92"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "quatre-vingt-treize",
+      "choices": [
+        "93",
+        "83",
+        "94"
+      ],
+      "answer": "93"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "quatre-vingt-quatorze",
+      "choices": [
+        "84",
+        "94",
+        "95"
+      ],
+      "answer": "94"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "quatre-vingt-quinze",
+      "choices": [
+        "85",
+        "96",
+        "95"
+      ],
+      "answer": "95"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "quatre-vingt-seize",
+      "choices": [
+        "96",
+        "86",
+        "97"
+      ],
+      "answer": "96"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "quatre-vingt-dix-sept",
+      "choices": [
+        "87",
+        "97",
+        "98"
+      ],
+      "answer": "97"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "quatre-vingt-dix-huit",
+      "choices": [
+        "88",
+        "99",
+        "98"
+      ],
+      "answer": "98"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "quatre-vingt-dix-neuf",
+      "choices": [
+        "99",
+        "89",
+        "98"
+      ],
+      "answer": "99"
+    },
+    {
+      "type": "word_bank",
+      "prompt": "91 = 80 + 11",
+      "bank": [
+        "quatre-vingt",
+        "onze",
+        "soixante",
+        "douze"
+      ],
+      "answer": [
+        "quatre-vingt",
+        "onze"
+      ]
+    },
+    {
+      "type": "word_bank",
+      "prompt": "99 = 80 + 19",
+      "bank": [
+        "quatre-vingt",
+        "dix-neuf",
+        "dix",
+        "soixante"
+      ],
+      "answer": [
+        "quatre-vingt",
+        "dix-neuf"
+      ]
+    },
+    {
+      "type": "matching",
+      "prompt": "Match each number to its French spelling",
+      "pairs": [
+        {
+          "left": "90",
+          "right": "quatre-vingt-dix"
+        },
+        {
+          "left": "91",
+          "right": "quatre-vingt-onze"
+        },
+        {
+          "left": "93",
+          "right": "quatre-vingt-treize"
+        },
+        {
+          "left": "97",
+          "right": "quatre-vingt-dix-sept"
+        },
+        {
+          "left": "99",
+          "right": "quatre-vingt-dix-neuf"
+        }
+      ]
+    }
+  ]
+}

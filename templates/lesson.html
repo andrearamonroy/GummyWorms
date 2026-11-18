@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{lesson.title}}</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='flashcards.css') }}">
+</head>
+<body>
+<a href="/">Back</a>
+<h1>{{lesson.title}}</h1>
+<div id="progress" data-max="{{ (lesson.exercises | length) + 1 + (1 if lesson.tips else 0) }}">
+<div id="bar"></div>
+<div id="fill"></div>
+<img id="worm" alt=""
+src="{{ url_for('static', filename='worm_stretch.png') }}"
+data-stretch="{{ url_for('static', filename='worm_stretch.png') }}"
+data-hump="{{ url_for('static', filename='worm_hump.png') }}">
+<img id="apple" alt="" src="{{ url_for('static', filename='apple.png') }}">
+</div>
+<section id="vocab-section">
+<h2>New words</h2>
+<p>Tap a card to hear it</p>
+<button id="save-all" class="save-all" type="button">＋ Save all words to a set</button>
+
+<div id="vocab">
+                {% for word in lesson.vocab %}
+<div class="vcard">
+<button class="card" data-fr="{{ word.fr }}">
+<strong>{{ word.fr }}</strong><br>
+                    {{ word.en }}
+</button>
+<button class="save-word" data-fr="{{ word.fr }}" data-en="{{ word.en }}" title="Save to a flashcard set" aria-label="Save {{ word.fr }} to a flashcard set">＋</button>
+</div>
+                {% endfor %}
+</div>
+<button id="vocab-continue">Continue</button>
+</section>
+
+        {% if lesson.tips %}
+<section id="tips-section" hidden>
+        {% for tip in lesson.tips %}
+<div class="tip">
+<div class="tip-head">
+<h2>{{ tip.title }}</h2>
+<button class="save-rule" type="button" data-rule='{{ tip | tojson }}'>＋ Save rule</button>
+</div>
+<p>{{ tip.text }}</p>
+            {% for ex in tip.examples %}
+<div class="equation" style="--p: {{ ex.parts | length }};">
+                {% for part in ex.parts %}
+<button class="card" data-fr="{{ part.fr }}">
+<strong>{{ part.fr }}</strong>
+                    {{ part.en }}
+</button>
+                    {% if not loop.last %}<span class="op">{{ ex.op or "+" }}</span>{% endif %}
+                {% endfor %}
+<span class="op">=</span>
+<button class="card result" data-fr="{{ ex.result.fr }}">
+<strong>{{ ex.result.fr }}</strong>
+                    {{ ex.result.en }}
+</button>
+</div>
+            {% endfor %}
+</div>
+        {% endfor %}
+<button id="tips-continue">Continue</button>
+</section>
+        {% endif %}
+
+<section id="practice" hidden>
+<h2>Practice</h2>
+<div id="exercise"></div>
+<p id="feedback"></p>
+</section>
+
+<script>
+const EXERCISES = {{ lesson.exercises | tojson }};
+const VOCAB = {{ lesson.vocab | tojson }};
+const LESSON_ID = {{ lesson.id | tojson }};
+const NEXT_LESSON = {{ ({"id": next_lesson.id, "title": next_lesson.title} if next_lesson else none) | tojson }};
+</script>
+<script src="{{ url_for('static', filename='fx.js') }}"></script>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+<script src="{{ url_for('static', filename='sets.js') }}"></script>
+<script src="{{ url_for('static', filename='save.js') }}"></script>
+<script src="{{ url_for('static', filename='progress.js') }}"></script>
+</body>
+<div id="account-bar" class="account-bar" data-icon="{{ url_for('static', filename='apple.png') }}"></div>
+</html>

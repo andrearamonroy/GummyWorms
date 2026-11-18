@@ -1,0 +1,173 @@
+{
+  "id": "food_drinks",
+  "title": "Food and drinks",
+  "requires_login": true,
+  "vocab": [
+    {
+      "fr": "l'eau",
+      "en": "water"
+    },
+    {
+      "fr": "le pain",
+      "en": "bread"
+    },
+    {
+      "fr": "le café",
+      "en": "coffee"
+    },
+    {
+      "fr": "le lait",
+      "en": "milk"
+    },
+    {
+      "fr": "le fromage",
+      "en": "cheese"
+    },
+    {
+      "fr": "la pomme",
+      "en": "apple"
+    },
+    {
+      "fr": "Je voudrais",
+      "en": "I would like"
+    },
+    {
+      "fr": "l'addition",
+      "en": "the bill"
+    }
+  ],
+  "tips": [
+    {
+      "title": "Je voudrais is how you order",
+      "text": "Je voudrais means “I would like”. It is the polite way to ask for something: Je voudrais un café, s'il vous plaît.",
+      "examples": []
+    },
+    {
+      "title": "Le or la?",
+      "text": "Every French noun is masculine or feminine. Le goes with masculine words (le pain) and la with feminine ones (la pomme). L' is used before a vowel (l'eau). Learn each word together with its le or la.",
+      "examples": []
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "prompt": "What do you hear?",
+      "speak": "l'eau",
+      "choices": [
+        "water",
+        "milk",
+        "bread"
+      ],
+      "answer": "water"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What do you hear?",
+      "speak": "le pain",
+      "choices": [
+        "bread",
+        "cheese",
+        "apple"
+      ],
+      "answer": "bread"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What do you hear?",
+      "speak": "le café",
+      "choices": [
+        "coffee",
+        "milk",
+        "water"
+      ],
+      "answer": "coffee"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What do you hear?",
+      "speak": "le fromage",
+      "choices": [
+        "cheese",
+        "bread",
+        "apple"
+      ],
+      "answer": "cheese"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What do you hear?",
+      "speak": "la pomme",
+      "choices": [
+        "apple",
+        "cheese",
+        "coffee"
+      ],
+      "answer": "apple"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "What do you hear?",
+      "speak": "l'addition",
+      "choices": [
+        "the bill",
+        "the menu",
+        "the water"
+      ],
+      "answer": "the bill"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "How do you say “I would like”?",
+      "choices": [
+        "Je voudrais",
+        "Je m'appelle",
+        "J'habite"
+      ],
+      "answer": "Je voudrais"
+    },
+    {
+      "type": "word_bank",
+      "prompt": "Translate: I would like a coffee",
+      "bank": [
+        "Je",
+        "voudrais",
+        "un",
+        "café",
+        "l'eau",
+        "pain"
+      ],
+      "answer": [
+        "Je",
+        "voudrais",
+        "un",
+        "café"
+      ]
+    },
+    {
+      "type": "matching",
+      "prompt": "Match each word to its French",
+      "pairs": [
+        {
+          "left": "water",
+          "right": "l'eau"
+        },
+        {
+          "left": "bread",
+          "right": "le pain"
+        },
+        {
+          "left": "milk",
+          "right": "le lait"
+        },
+        {
+          "left": "cheese",
+          "right": "le fromage"
+        },
+        {
+          "left": "apple",
+          "right": "la pomme"
+        }
+      ]
+    }
+  ]
+}

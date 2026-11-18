@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ lesson.title }}</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='flashcards.css') }}">
+</head>
+<body>
+<div id="account-bar" class="account-bar" data-icon="{{ url_for('static', filename='apple.png') }}"></div>
+<a href="/">← Back to lessons</a>
+<h1>{{ lesson.title }} <span class="lock" aria-hidden="true">🔒</span></h1>
+
+<div class="gate">
+  <h2>Sign in to continue</h2>
+  <p class="lead">This lesson is for signed-in learners. Sign in with Google and you’ll come straight back here.</p>
+  <a class="signin" href="{{ url_for('accounts.login', next=request.path) }}">Sign in with Google</a>
+</div>
+<script src="{{ url_for('static', filename='sets.js') }}"></script>
+</body>
+</html>

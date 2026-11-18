@@ -1,0 +1,214 @@
+{
+  "id": "numbers_0_10",
+  "title": "Numbers 0–10",
+  "vocab": [
+    {
+      "fr": "zéro",
+      "en": "0"
+    },
+    {
+      "fr": "un",
+      "en": "1"
+    },
+    {
+      "fr": "deux",
+      "en": "2"
+    },
+    {
+      "fr": "trois",
+      "en": "3"
+    },
+    {
+      "fr": "quatre",
+      "en": "4"
+    },
+    {
+      "fr": "cinq",
+      "en": "5"
+    },
+    {
+      "fr": "six",
+      "en": "6"
+    },
+    {
+      "fr": "sept",
+      "en": "7"
+    },
+    {
+      "fr": "huit",
+      "en": "8"
+    },
+    {
+      "fr": "neuf",
+      "en": "9"
+    },
+    {
+      "fr": "dix",
+      "en": "10"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "zéro",
+      "choices": [
+        "0",
+        "10",
+        "1"
+      ],
+      "answer": "0"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "un",
+      "choices": [
+        "11",
+        "1",
+        "2"
+      ],
+      "answer": "1"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "deux",
+      "choices": [
+        "10",
+        "3",
+        "2"
+      ],
+      "answer": "2"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "trois",
+      "choices": [
+        "3",
+        "13",
+        "4"
+      ],
+      "answer": "3"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "quatre",
+      "choices": [
+        "14",
+        "4",
+        "5"
+      ],
+      "answer": "4"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "cinq",
+      "choices": [
+        "15",
+        "6",
+        "5"
+      ],
+      "answer": "5"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "six",
+      "choices": [
+        "6",
+        "10",
+        "1"
+      ],
+      "answer": "6"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "sept",
+      "choices": [
+        "17",
+        "7",
+        "8"
+      ],
+      "answer": "7"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "huit",
+      "choices": [
+        "18",
+        "9",
+        "8"
+      ],
+      "answer": "8"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "neuf",
+      "choices": [
+        "9",
+        "19",
+        "10"
+      ],
+      "answer": "9"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which number do you hear?",
+      "speak": "dix",
+      "choices": [
+        "6",
+        "10",
+        "2"
+      ],
+      "answer": "10"
+    },
+    {
+      "type": "matching",
+      "prompt": "Match each number to its French spelling",
+      "pairs": [
+        {
+          "left": "6",
+          "right": "six"
+        },
+        {
+          "left": "2",
+          "right": "deux"
+        },
+        {
+          "left": "9",
+          "right": "neuf"
+        },
+        {
+          "left": "4",
+          "right": "quatre"
+        },
+        {
+          "left": "0",
+          "right": "zéro"
+        },
+        {
+          "left": "10",
+          "right": "dix"
+        }
+      ]
+    }
+  ]
+}

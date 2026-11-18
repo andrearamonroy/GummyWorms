@@ -1,0 +1,11 @@
+# secrets and local data: never upload these
+.env
+*.db
+instance/
+
+# Python and Mac clutter
+venv/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store

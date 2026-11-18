@@ -1,0 +1,206 @@
+{
+  "id": "years",
+  "title": "Years",
+  "vocab": [
+    {
+      "fr": "deux mille vingt-quatre",
+      "en": "2024"
+    },
+    {
+      "fr": "deux mille cinq",
+      "en": "2005"
+    },
+    {
+      "fr": "deux mille six",
+      "en": "2006"
+    },
+    {
+      "fr": "deux mille vingt-six",
+      "en": "2026"
+    }
+  ],
+  "tips": [
+    {
+      "title": "Years are plain numbers",
+      "text": "In English we split a year in two, like “twenty twenty-four”. In French you say the whole number: two thousand twenty-four.",
+      "examples": [
+        {
+          "parts": [
+            {
+              "fr": "deux mille",
+              "en": "2000"
+            },
+            {
+              "fr": "vingt-quatre",
+              "en": "24"
+            }
+          ],
+          "result": {
+            "fr": "deux mille vingt-quatre",
+            "en": "2024"
+          }
+        },
+        {
+          "parts": [
+            {
+              "fr": "deux mille",
+              "en": "2000"
+            },
+            {
+              "fr": "vingt-six",
+              "en": "26"
+            }
+          ],
+          "result": {
+            "fr": "deux mille vingt-six",
+            "en": "2026"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Years skip the zero",
+      "text": "2005 is deux mille cinq, never “two thousand zero five”. Just add the last digit.",
+      "examples": [
+        {
+          "parts": [
+            {
+              "fr": "deux mille",
+              "en": "2000"
+            },
+            {
+              "fr": "cinq",
+              "en": "5"
+            }
+          ],
+          "result": {
+            "fr": "deux mille cinq",
+            "en": "2005"
+          }
+        },
+        {
+          "parts": [
+            {
+              "fr": "deux mille",
+              "en": "2000"
+            },
+            {
+              "fr": "six",
+              "en": "6"
+            }
+          ],
+          "result": {
+            "fr": "deux mille six",
+            "en": "2006"
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which year do you hear?",
+      "speak": "deux mille vingt-quatre",
+      "choices": [
+        "2024",
+        "2014",
+        "2042"
+      ],
+      "answer": "2024"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which year do you hear?",
+      "speak": "deux mille cinq",
+      "choices": [
+        "2015",
+        "2005",
+        "2050"
+      ],
+      "answer": "2005"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which year do you hear?",
+      "speak": "deux mille six",
+      "choices": [
+        "2016",
+        "2060",
+        "2006"
+      ],
+      "answer": "2006"
+    },
+    {
+      "type": "multiple_choice",
+      "speak_choices": true,
+      "prompt": "Which year do you hear?",
+      "speak": "deux mille vingt-six",
+      "choices": [
+        "2026",
+        "2016",
+        "2062"
+      ],
+      "answer": "2026"
+    },
+    {
+      "type": "word_bank",
+      "prompt": "Build 2024",
+      "bank": [
+        "deux",
+        "mille",
+        "vingt-quatre",
+        "vingt-six",
+        "cinq",
+        "cent"
+      ],
+      "answer": [
+        "deux",
+        "mille",
+        "vingt-quatre"
+      ]
+    },
+    {
+      "type": "word_bank",
+      "prompt": "Build 2005",
+      "bank": [
+        "deux",
+        "mille",
+        "cinq",
+        "six",
+        "zéro",
+        "cent"
+      ],
+      "answer": [
+        "deux",
+        "mille",
+        "cinq"
+      ]
+    },
+    {
+      "type": "matching",
+      "prompt": "Match each year to its French spelling",
+      "pairs": [
+        {
+          "left": "2024",
+          "right": "deux mille vingt-quatre"
+        },
+        {
+          "left": "2005",
+          "right": "deux mille cinq"
+        },
+        {
+          "left": "2006",
+          "right": "deux mille six"
+        },
+        {
+          "left": "2026",
+          "right": "deux mille vingt-six"
+        }
+      ]
+    }
+  ]
+}
